@@ -32,11 +32,42 @@ export default function About() {
                 Founded in 2023, CleanWave Kenya started with a simple observation: urban life in Kenya is getting busier, and quality, reliable help is hard to find.
               </p>
               <p>
-                We set out to create a service that combines professional hotel-standard cleaning with the convenience of modern technology. No more negotiating prices or worrying about reliability.
+                Our vision is to become Kenya's most trusted cleaning partner by leveraging technology to provide seamless booking and tracking, while maintaining a human touch through our extensively trained staff.
+              </p>
+              <p>
+                We believe that a clean environment is the foundation of a healthy and happy life. That's why we use only high-grade, eco-friendly cleaning agents that are safe for your family and pets.
               </p>
               <p>
                 Today, we serve over 2,000 households across Nairobi, Mombasa, and Kisumu, employing a team of 50+ dedicated cleaning professionals who are the heart of our company.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Core Values */}
+        <div className="mb-24 py-16 bg-blue-50/50 rounded-3xl px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Core Values</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                <span className="text-2xl">🤝</span>
+              </div>
+              <h3 className="font-bold text-xl mb-2">Integrity</h3>
+              <p className="text-slate-600">Honesty and transparency in every interaction, from pricing to service delivery.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                <span className="text-2xl">🌱</span>
+              </div>
+              <h3 className="font-bold text-xl mb-2">Sustainability</h3>
+              <p className="text-slate-600">Commitment to using eco-friendly products that protect our planet and your health.</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+                <span className="text-2xl">🚀</span>
+              </div>
+              <h3 className="font-bold text-xl mb-2">Innovation</h3>
+              <p className="text-slate-600">Continuously improving our services through technology and modern techniques.</p>
             </div>
           </div>
         </div>

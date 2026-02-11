@@ -57,9 +57,16 @@ export default function Services() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold font-display mb-6">Our Services</h1>
-          <p className="text-lg text-muted-foreground">
-            Whether it's a quick tidy-up or a deep clean, we have a package that fits your needs perfectly.
+          <p className="text-lg text-muted-foreground mb-8">
+            Tailored cleaning solutions for every need. From high-rise offices to cozy apartments, 
+            we bring the same level of excellence and attention to detail.
           </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <span className="draw-line cursor-pointer font-medium text-primary">All Services</span>
+            <span className="draw-line cursor-pointer font-medium text-slate-500">Residential</span>
+            <span className="draw-line cursor-pointer font-medium text-slate-500">Commercial</span>
+            <span className="draw-line cursor-pointer font-medium text-slate-500">Specialized</span>
+          </div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

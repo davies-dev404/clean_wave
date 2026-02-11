@@ -40,24 +40,37 @@ export default function Home() {
               Experience the <br/>
               <span className="text-gradient">Purest Clean</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-lg leading-relaxed">
-              Professional laundry and cleaning services delivered to your doorstep. 
-              We give you back the time to focus on what matters.
+            <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-xl leading-relaxed">
+              CleanWave Kenya brings professional, hotel-standard cleaning to your doorstep. 
+              Our eco-friendly processes and background-checked professionals ensure your space is not just clean, but safe and healthy for your family.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link href="/booking">
-                <Button size="lg" className="rounded-full px-8 py-7 text-lg shadow-xl shadow-primary/20 bg-primary hover:bg-primary/90">
+                <Button size="lg" className="rounded-full px-8 py-7 text-lg shadow-xl shadow-primary/20 bg-primary hover:bg-primary/90 hover-lift">
                   Book a Service
                 </Button>
               </Link>
               <Link href="/pricing">
-                <Button variant="outline" size="lg" className="rounded-full px-8 py-7 text-lg bg-white/80 backdrop-blur-sm border-slate-200 hover:bg-white">
-                  Get a Quote
+                <Button variant="outline" size="lg" className="rounded-full px-8 py-7 text-lg bg-white/80 backdrop-blur-sm border-slate-200 hover:bg-white hover-lift">
+                  See Full Pricing
                 </Button>
               </Link>
             </div>
             
-            <div className="mt-12 flex items-center gap-8 text-sm font-medium text-slate-500">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 border-t border-slate-200 pt-8">
+              <div>
+                <h4 className="font-bold text-slate-900 text-xl">100%</h4>
+                <p className="text-sm text-slate-500">Satisfaction Guaranteed</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-slate-900 text-xl">50+</h4>
+                <p className="text-sm text-slate-500">Vetted Professionals</p>
+              </div>
+              <div className="hidden md:block">
+                <h4 className="font-bold text-slate-900 text-xl">24/7</h4>
+                <p className="text-sm text-slate-500">Online Support</p>
+              </div>
+            </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                 <span>Available Today</span>
