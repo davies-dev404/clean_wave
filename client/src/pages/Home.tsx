@@ -71,6 +71,8 @@ export default function Home() {
                 <p className="text-sm text-slate-500">Online Support</p>
               </div>
             </div>
+
+            <div className="mt-12 flex items-center gap-8 text-sm font-medium text-slate-500">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                 <span>Available Today</span>
