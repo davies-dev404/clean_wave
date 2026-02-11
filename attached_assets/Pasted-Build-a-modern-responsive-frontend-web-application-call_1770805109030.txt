@@ -1,0 +1,87 @@
+Build a modern, responsive frontend web application called "CleanWave Kenya" for a Laundry and Cleaning Services company based in Kenya.
+
+Tech Stack:
+- React (Vite)
+- Tailwind CSS
+- React Router
+- Fully responsive (mobile-first)
+
+Business Focus:
+Laundry and Professional Cleaning Services in Kenya (Nairobi, Mombasa, Kisumu, Eldoret)
+
+Pages Required:
+
+1. Home Page
+- Hero section with headline: "Professional Laundry & Cleaning Services in Kenya"
+- Call-to-action buttons: "Book Now" and "Get a Quote"
+- Services preview section
+- Why Choose Us section (Affordable, Reliable, Eco-Friendly, Fast Pickup & Delivery)
+- Customer testimonials
+- WhatsApp floating button
+- Service areas section (Nairobi, Mombasa, etc.)
+
+2. Services Page
+Include detailed cards for:
+- Residential Cleaning
+- Office Cleaning
+- Deep Cleaning
+- Move-In/Move-Out Cleaning
+- Laundry Wash & Fold
+- Dry Cleaning
+- Ironing Services
+- Carpet & Sofa Cleaning
+
+Each service should have:
+- Description
+- Price range in KES
+- "Book Service" button
+
+3. Pricing Page
+- Clear pricing tables in Kenyan Shillings (KES)
+- Laundry pricing per kg
+- Cleaning pricing per house size (1BR, 2BR, 3BR)
+- Highlight popular package
+
+4. Booking / Quote Page
+Frontend-only form with:
+- Full Name
+- Phone Number
+- Location (Dropdown of Kenyan cities)
+- Service Type
+- Date picker
+- House size or Laundry weight
+- Special instructions
+- Submit button (show success message only, no backend)
+
+5. About Us Page
+- Company story
+- Mission & Vision
+- Our Process (Book → Pickup → Clean → Deliver)
+- Team section
+
+6. Contact Page
+- Contact form (frontend only)
+- Business phone number
+- Email
+- Google Maps placeholder
+- WhatsApp button
+
+Design Requirements:
+- Clean professional SaaS-style UI
+- Blue and green color palette
+- Soft shadows and rounded cards
+- Smooth animations
+- Light/Dark mode toggle
+- Sticky navigation bar
+- Footer with quick links and social media icons
+
+Extra Features:
+- Scroll animations
+- SEO-friendly structure
+- Proper component structure
+- Clean folder organization
+- Reusable components (Navbar, Footer, ServiceCard, PricingCard, etc.)
+
+Make the UI look modern like a professional startup website in Kenya.
+
+Generate complete folder structure and all necessary files.
