@@ -64,7 +64,7 @@ const Home = () => {
                     <div className="absolute inset-0 bg-blue-900/10" />
                 </div>
         
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 mt-16">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-10 md:py-20 mt-16">
                     <ScrollAnimation animation="fade-up">
                         <div className="max-w-3xl">
                             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 backdrop-blur-md rounded-full text-white font-bold text-xs uppercase tracking-widest mb-8 border border-white/10">
@@ -74,7 +74,7 @@ const Home = () => {
                                 </span>
                                 Same-Day Service Available
                             </div>
-                            <h1 className="text-6xl md:text-8xl font-serif font-bold text-white mb-8 leading-[1] drop-shadow-2xl">
+                            <h1 className="text-4xl md:text-8xl font-serif font-bold text-white mb-6 md:mb-8 leading-[1.1] md:leading-[1] drop-shadow-2xl">
                                 Experience the joy of <br />
                                 <span className="text-primary drop-shadow-[0_4px_30px_rgba(59,130,246,0.8)]">pristine spaces</span>
                             </h1>
@@ -119,14 +119,14 @@ const Home = () => {
             </section>
 
 
-            <section className="relative z-20 -mt-20 pb-16">
+            <section className="relative z-20 -mt-10 md:-mt-20 pb-10 md:pb-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                         <ScrollAnimation delay={0} className="h-full">
                             <Link to="/quote" className="group h-full block">
                                 <motion.div 
                                     whileHover={{ scale: 1.05, transition: { duration: 0.4, ease: "easeOut" } }}
-                                    className="bg-white border-draw-container hover:bg-primary transition-colors duration-500 p-8 rounded-2xl shadow-xl border border-slate-100 h-full flex flex-col items-start gap-4 group-hover:border-primary/20 relative overflow-hidden"
+                                    className="bg-white border-draw-container hover:bg-primary transition-colors duration-500 p-4 md:p-8 rounded-2xl shadow-xl border border-slate-100 h-full flex flex-col items-start gap-3 md:gap-4 group-hover:border-primary/20 relative overflow-hidden"
                                 >
                                     <div className="border-draw-line line-top" />
                                     <div className="border-draw-line line-right [transition-delay:100ms]" />
@@ -137,8 +137,8 @@ const Home = () => {
                                         <Calendar className="w-8 h-8 text-primary group-hover:text-white" />
                                     </div>
                                     <div className="relative z-10">
-                                        <h3 className="font-serif font-bold text-2xl mb-2 text-slate-900 group-hover:text-white">Book Online</h3>
-                                        <p className="text-slate-500 group-hover:text-white/90 text-sm font-light leading-relaxed">Schedule your cleaning session in under 60 seconds.</p>
+                                        <h3 className="font-serif font-bold text-lg md:text-2xl mb-1 md:mb-2 text-slate-900 group-hover:text-white">Book Online</h3>
+                                        <p className="text-slate-500 group-hover:text-white/90 text-[10px] md:text-sm font-light leading-relaxed">Schedule your cleaning session in under 60 seconds.</p>
                                     </div>
                                 </motion.div>
                             </Link>
@@ -159,8 +159,8 @@ const Home = () => {
                                         <Droplets className="w-8 h-8 text-primary group-hover:text-white" />
                                     </div>
                                     <div className="relative z-10">
-                                        <h3 className="font-serif font-bold text-2xl mb-2 text-slate-900 group-hover:text-white">Eco-Friendly</h3>
-                                        <p className="text-slate-500 group-hover:text-white/90 text-sm font-light leading-relaxed">We use safe, non-toxic products for your family and pets.</p>
+                                        <h3 className="font-serif font-bold text-lg md:text-2xl mb-1 md:mb-2 text-slate-900 group-hover:text-white">Eco-Friendly</h3>
+                                        <p className="text-slate-500 group-hover:text-white/90 text-[10px] md:text-sm font-light leading-relaxed">We use safe, non-toxic products for your family and pets.</p>
                                     </div>
                                 </motion.div>
                             </div>
@@ -181,8 +181,8 @@ const Home = () => {
                                         <ShieldCheck className="w-8 h-8 text-primary group-hover:text-white" />
                                     </div>
                                     <div className="relative z-10">
-                                        <h3 className="font-serif font-bold text-2xl mb-2 text-slate-900 group-hover:text-white">Trusted Staff</h3>
-                                        <p className="text-slate-500 group-hover:text-white/90 text-sm font-light leading-relaxed">Vetted, trained, and uniformed professionals you can trust.</p>
+                                        <h3 className="font-serif font-bold text-lg md:text-2xl mb-1 md:mb-2 text-slate-900 group-hover:text-white">Trusted Staff</h3>
+                                        <p className="text-slate-500 group-hover:text-white/90 text-[10px] md:text-sm font-light leading-relaxed">Vetted, trained, and uniformed professionals you can trust.</p>
                                     </div>
                                 </motion.div>
                             </Link>
@@ -203,8 +203,8 @@ const Home = () => {
                                         <Newspaper className="w-8 h-8 text-primary group-hover:text-white" />
                                     </div>
                                     <div className="relative z-10">
-                                        <h3 className="font-serif font-bold text-2xl mb-2 text-slate-900 group-hover:text-white">Cleaning Tips</h3>
-                                        <p className="text-slate-500 group-hover:text-white/90 text-sm font-light leading-relaxed">Visit our blog for tips on maintaining a clean home.</p>
+                                        <h3 className="font-serif font-bold text-lg md:text-2xl mb-1 md:mb-2 text-slate-900 group-hover:text-white">Cleaning Tips</h3>
+                                        <p className="text-slate-500 group-hover:text-white/90 text-[10px] md:text-sm font-light leading-relaxed">Visit our blog for tips on maintaining a clean home.</p>
                                     </div>
                                 </motion.div>
                             </Link>
@@ -215,7 +215,7 @@ const Home = () => {
 
 
 
-            <section className="py-20 bg-muted/30">
+            <section className="py-10 md:py-20 bg-muted/30">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16 items-start">
                         <ScrollAnimation animation="fade-right">
@@ -257,12 +257,12 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="py-20">
+            <section className="py-10 md:py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
                         {features.map((item, i) => (
                             <ScrollAnimation key={i} delay={i * 100}>
-                                <Link to={item.link} className="group relative overflow-hidden rounded-[2.5rem] h-[450px] bg-accent block cursor-pointer border-draw-container premium-shadow hover:premium-shadow-hover transition-all duration-500">
+                                <Link to={item.link} className="group relative overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] h-[300px] md:h-[450px] bg-accent block cursor-pointer border-draw-container premium-shadow hover:premium-shadow-hover transition-all duration-500">
                                     <div className="border-draw-line line-top" />
                                     <div className="border-draw-line line-right [transition-delay:100ms]" />
                                     <div className="border-draw-line line-bottom [transition-delay:200ms]" />
@@ -274,7 +274,7 @@ const Home = () => {
                                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent group-hover:via-slate-900/60 transition-colors duration-500"></div>
                   
                                     <div className="absolute inset-0 flex flex-col justify-end p-10 text-white">
-                                        <h3 className="text-3xl font-serif font-bold mb-4 transform transition-all duration-500 group-hover:-translate-y-2 drop-shadow-lg">
+                                        <h3 className="text-xl md:text-3xl font-serif font-bold mb-2 md:mb-4 transform transition-all duration-500 group-hover:-translate-y-2 drop-shadow-lg">
                                             {item.title}
                                         </h3>
                                         <p className="text-white/80 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-75 text-sm font-light leading-relaxed">
@@ -298,7 +298,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="py-20 bg-muted/30">
+            <section className="py-10 md:py-20 bg-muted/30">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <span className="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">Our Expertise</span>
@@ -307,7 +307,7 @@ const Home = () => {
                         </h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                         {servicesData.slice(0, 6).map((service, i) => {
                             const Icon = service.icon;
                             return (
@@ -317,7 +317,7 @@ const Home = () => {
                                             scale: 1.03,
                                             transition: { duration: 0.4, ease: "easeOut" }
                                         }}
-                                        className="bg-card border-draw-container premium-shadow hover:premium-shadow-hover transition-all duration-500 p-10 rounded-[2rem] border border-border/50 group flex flex-col items-start text-left h-full relative"
+                                        className="bg-card border-draw-container premium-shadow hover:premium-shadow-hover transition-all duration-500 p-4 md:p-10 rounded-[1.5rem] md:rounded-[2rem] border border-border/50 group flex flex-col items-start text-left h-full relative"
                                     >
                                         <div className="border-draw-line line-top" />
                                         <div className="border-draw-line line-right [transition-delay:100ms]" />
@@ -327,8 +327,8 @@ const Home = () => {
                                         <div className="w-16 h-16 bg-blue-50/50 rounded-2xl flex items-center justify-center mb-8 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 transform group-hover:rotate-6">
                                             <Icon className="w-8 h-8" />
                                         </div>
-                                        <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900 leading-tight">{service.title}</h3>
-                                        <p className="text-slate-500 mb-8 line-clamp-3 text-[15px] font-light leading-relaxed">
+                                        <h3 className="text-sm md:text-2xl font-serif font-bold mb-2 md:mb-4 text-slate-900 leading-tight">{service.title}</h3>
+                                        <p className="text-slate-500 mb-4 md:mb-8 line-clamp-3 text-[10px] md:text-[15px] font-light leading-relaxed">
                                             {service.shortDesc}
                                         </p>
                                         <div className="mt-auto">
@@ -346,7 +346,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="py-20 bg-slate-900 text-white">
+            <section className="py-10 md:py-20 bg-slate-900 text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <span className="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">Client Reviews</span>
                     <h2 className="text-3xl md:text-5xl font-serif font-bold mb-4">What Our Clients Say</h2>
@@ -366,7 +366,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="py-20 bg-black text-white">
+            <section className="py-10 md:py-20 bg-black text-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
@@ -401,7 +401,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="py-20 bg-slate-50 text-slate-900">
+            <section className="py-10 md:py-20 bg-slate-50 text-slate-900">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-16">
                         <div>
@@ -442,17 +442,17 @@ const Home = () => {
             </section>
 
             {newsItems.length > 0 && (
-                <section className="py-20 bg-white border-t border-slate-100">
+                <section className="py-10 md:py-20 bg-white border-t border-slate-100">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <span className="text-primary font-bold uppercase tracking-widest text-sm mb-2 block">Blog</span>
                         <h2 className="text-3xl md:text-5xl font-serif font-bold mb-12">Latest Cleaning Tips</h2>
               
-                        <div className="grid md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
                             {newsItems.slice(0, 3).map((item, index) => (
                                 <Link to={`/news/${item.id}`} key={index} className="group cursor-pointer text-left block">
                                     <motion.div 
                                         whileHover={{ scale: 1.02, transition: { duration: 0.4, ease: "easeOut" } }}
-                                        className="bg-white border-draw-container premium-shadow hover:premium-shadow-hover transition-all duration-500 p-4 rounded-[2rem] border border-slate-100 relative h-full"
+                                        className="bg-white border-draw-container premium-shadow hover:premium-shadow-hover transition-all duration-500 p-3 md:p-4 rounded-[1.5rem] md:rounded-[2rem] border border-slate-100 relative h-full"
                                     >
                                         <div className="border-draw-line line-top" />
                                         <div className="border-draw-line line-right [transition-delay:100ms]" />
@@ -490,7 +490,7 @@ const Home = () => {
             <section className="relative z-20 lg:-mb-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-primary text-white rounded-3xl overflow-hidden shadow-2xl grid lg:grid-cols-2">
-                        <div className="p-12 lg:p-24 flex flex-col justify-center">
+                        <div className="p-8 md:p-12 lg:p-24 flex flex-col justify-center">
                             <span className="text-xs font-bold uppercase tracking-widest bg-white/10 w-fit px-3 py-1 rounded mb-6">Have a custom request?</span>
                             <h2 className="text-4xl font-serif font-bold mb-4">Request a Call Back<br/>Today</h2>
                             <p className="text-white/70 mb-8 max-w-md">Leave your details and we'll call you back to discuss your cleaning needs.</p>
