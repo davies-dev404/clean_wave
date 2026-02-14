@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { servicesData } from "@/data/servicesData";
 
 export function Header() {
@@ -122,21 +123,34 @@ export function Header() {
                             <Link to="/" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-slate-900">Home</Link>
                             <Link to="/about" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-slate-900">About</Link>
                             
-                            <div className="py-2">
-                                <span className="block text-sm font-bold text-slate-500 mb-2 uppercase tracking-wider">Services</span>
-                                <div className="pl-4 space-y-3 border-l-2 border-slate-100">
-                                    {servicesData.map((service) => (
-                                        <Link 
-                                            key={service.slug}
-                                            to={`/services/${service.slug}`} 
-                                            onClick={() => setIsOpen(false)} 
-                                            className="block text-base text-slate-700"
-                                        >
-                                            {service.title}
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
+                            <Accordion type="single" collapsible className="w-full">
+                                <AccordionItem value="services" className="border-none">
+                                    <AccordionTrigger className="hover:no-underline py-2 text-lg font-medium text-slate-900">
+                                        Services
+                                    </AccordionTrigger>
+                                    <AccordionContent className="pt-2">
+                                        <div className="pl-4 space-y-4 border-l-2 border-slate-100">
+                                            {servicesData.map((service) => (
+                                                <Link 
+                                                    key={service.slug}
+                                                    to={`/services/${service.slug}`} 
+                                                    onClick={() => setIsOpen(false)} 
+                                                    className="block text-base text-slate-700"
+                                                >
+                                                    {service.title}
+                                                </Link>
+                                            ))}
+                                            <Link 
+                                                to="/services" 
+                                                onClick={() => setIsOpen(false)} 
+                                                className="block text-base font-bold text-primary pt-2"
+                                            >
+                                                View All Services
+                                            </Link>
+                                        </div>
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </Accordion>
 
                             <Link to="/gallery" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-slate-900">Gallery</Link>
                             <Link to="/contact" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-slate-900">Contact</Link>
